@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Молодёжный сленг XXI века: от новых слов к современному словарю</title>
+<style>
+:root{--ink:#242044;--muted:#6c6788;--blue:#ff6b9a;--violet:#8b5cf6;--sky:#b9f0ff;--mint:#c9ffe9;--paper:#fff8fc;--line:#ece2fb;--shadow:0 18px 55px rgba(126,83,173,.12)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:radial-gradient(ellipse at 8% 0%,#dff7ff 0,transparent 34%),radial-gradient(ellipse at 100% 20%,#ffe0ee 0,transparent 30%),radial-gradient(ellipse at 50% 100%,#e9ffe9 0,transparent 33%),var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.75}
+.progress{height:4px;position:fixed;z-index:50;top:0;left:0;right:0;background:#e5ebfa}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#25c6da,#8b5cf6,#ff6b9a,#ffbd59);transition:width .12s}
+.topbar{position:sticky;top:4px;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px clamp(14px,4vw,36px);background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid #dce7fb;box-shadow:0 5px 25px #3158a20b}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.03em}
+.brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,#ff6b9a,#8b5cf6,#25c6da);display:grid;place-items:center;color:white;box-shadow:0 7px 20px #6689f54f}
+.top-actions{display:flex;gap:8px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #dbe5fa;border-radius:12px;background:white;color:var(--ink);padding:8px 12px;font-size:13px;font-weight:700;transition:transform .2s,box-shadow .2s,border-color .2s}
+button:hover{transform:translateY(-1px);box-shadow:0 7px 18px #385fba1a;border-color:#b9cbf6}
+.layout{max-width:1120px;margin:0 auto;padding:30px clamp(14px,4vw,36px) 80px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px}
+.sidebar{align-self:start;position:sticky;top:82px;max-height:calc(100vh - 100px);overflow:auto;padding:16px 12px;border:1px solid #dce7fb;border-radius:19px;background:rgba(255,255,255,.94);box-shadow:0 12px 35px #365f9e0b}
+.sidebar-label{margin:0 8px 10px;color:#7c88a4;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.nav-list{display:flex;flex-direction:column;gap:4px}
+.nav-list button{width:100%;text-align:left;border:0;background:transparent;color:#596783;font-size:12px;font-weight:650;padding:8px 9px;line-height:1.4}
+.nav-list button.active,.nav-list button:hover{background:linear-gradient(100deg,#e8f2ff,#f1eaff);color:#7750d8;box-shadow:none;transform:none}
+main{min-width:0}
+.hero{position:relative;overflow:hidden;border-radius:28px;padding:clamp(27px,5vw,54px);background:radial-gradient(circle at 85% 15%,#b9f0ff 0,transparent 31%),radial-gradient(circle at 92% 90%,#ffd6e9 0,transparent 28%),radial-gradient(circle at 12% 90%,#d6ffe7 0,transparent 25%),linear-gradient(135deg,#ffffff 0%,#fff0f7 52%,#efffff 100%);border:1px solid #eadcf9;box-shadow:var(--shadow);margin-bottom:22px}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:6px 11px;background:#fff;border:1px solid #d9e6ff;color:#7a50d6;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin-bottom:18px;box-shadow:0 4px 14px #3e6fce0c}
+.hero h1{font-size:clamp(29px,5vw,49px);letter-spacing:-.045em;line-height:1.13;margin:0;max-width:760px;color:#1b2c4d}
+.hero-orb{position:absolute;right:-50px;bottom:-95px;width:240px;height:240px;border-radius:50%;border:1px solid #c7a7ff66;box-shadow:0 0 0 25px #ff9ecb18,0 0 0 50px #6fe4e50c;pointer-events:none}\n.bubble-field{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}\n.bubble{position:absolute;bottom:-70px;border-radius:50%;border:1px solid rgba(255,255,255,.9);background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,255,255,.12));box-shadow:inset -5px -7px 14px rgba(255,255,255,.35),0 5px 18px rgba(139,92,246,.10);animation:floatBubble var(--duration,12s) linear infinite;animation-delay:var(--delay,0s);opacity:0}\n.bubble::after{content:"";position:absolute;top:20%;left:23%;width:24%;height:18%;border-radius:50%;background:rgba(255,255,255,.8);filter:blur(1px);transform:rotate(-35deg)}\n@keyframes floatBubble{0%{transform:translate3d(0,0,0) scale(.75);opacity:0}12%{opacity:.8}70%{opacity:.65}100%{transform:translate3d(var(--drift,24px),-520px,0) scale(1.12);opacity:0}}\n.hero-content{position:relative;z-index:2}
+.flower-mark{display:inline-block;color:#1685f8;font-size:18px;line-height:1;animation:flowerTurn 12s linear infinite;transform-origin:center}
+@keyframes flowerTurn{to{transform:rotate(360deg)}}
+.hero .bubble-field{z-index:1}
+.hero .bubble:nth-child(2){left:5%;width:16px;height:16px;--duration:13s;--delay:-3s;--drift:18px}
+.hero .bubble:nth-child(3){left:14%;width:28px;height:28px;--duration:17s;--delay:-8s;--drift:-20px}
+.hero .bubble:nth-child(4){left:23%;width:13px;height:13px;--duration:12s;--delay:-5s;--drift:24px}
+.hero .bubble:nth-child(5){left:32%;width:23px;height:23px;--duration:16s;--delay:-10s;--drift:-16px}
+.hero .bubble:nth-child(6){left:41%;width:34px;height:34px;--duration:19s;--delay:-2s;--drift:22px}
+.hero .bubble:nth-child(7){left:50%;width:12px;height:12px;--duration:14s;--delay:-7s;--drift:-18px}
+.hero .bubble:nth-child(8){left:58%;width:20px;height:20px;--duration:15s;--delay:-4s;--drift:15px}
+.hero .bubble:nth-child(9){left:65%;width:31px;height:31px;--duration:18s;--delay:-11s;--drift:-22px}
+.hero .bubble:nth-child(10){left:72%;width:14px;height:14px;--duration:11s;--delay:-6s;--drift:20px}
+.hero .bubble:nth-child(11){left:79%;width:25px;height:25px;--duration:16s;--delay:-9s;--drift:-14px}
+.hero .bubble:nth-child(12){left:86%;width:18px;height:18px;--duration:13s;--delay:-1s;--drift:17px}
+.hero .bubble:nth-child(13){left:92%;width:34px;height:34px;--duration:19s;--delay:-13s;--drift:-20px}
+.hero .bubble:nth-child(14){left:97%;width:12px;height:12px;--duration:14s;--delay:-7s;--drift:12px}
+.hero .bubble:nth-child(15){left:37%;width:17px;height:17px;--duration:12s;--delay:-2s;--drift:-24px}\n@media(prefers-reduced-motion:reduce){.bubble{animation:none;display:none}}
+#lessonContent{background:rgba(255,255,255,.45);border-radius:22px;padding:6px 0}
+.line{overflow-wrap:anywhere;position:relative}
+.major-heading{margin:30px 0 15px;padding:18px 21px;border-radius:17px;background:linear-gradient(105deg,#e3faff,#f4eaff 52%,#ffe8f1);border:1px solid #e8dafa;box-shadow:0 8px 24px #5573b20c;font-size:clamp(19px,2.6vw,24px);font-weight:850;letter-spacing:-.025em;line-height:1.4}
+.major-heading::before{content:"";position:absolute;left:0;top:17px;bottom:17px;width:4px;border-radius:4px;background:linear-gradient(#3188ff,#a15cf3)}
+.major-heading.work-heading{background:linear-gradient(105deg,#dcfaff,#dcffed 48%,#ffe5f2);font-size:clamp(21px,2.8vw,26px)}
+.level-heading{margin:26px 0 10px;padding:13px 16px;border-radius:14px;background:linear-gradient(110deg,#fff,#fff8fd);border:1px solid #eadff8;box-shadow:0 5px 18px #9a62f50c;font-size:18px;font-weight:800;color:#314e86}
+.light-label{margin:13px 0 5px;padding:0 4px;color:#596b91;font-size:14px;font-weight:550}
+.light-label em{font-style:italic;font-weight:550}
+.bold-label{margin:18px 0 8px;font-weight:800;color:#684ba5}
+.lead-in{margin:14px 0 8px;padding:12px 15px;border-left:3px solid #b9d8ff;border-radius:0 12px 12px 0;background:#f8fbff;color:#394968;font-size:14px;font-weight:450}
+.intro-bold{font-weight:800}
+.task-heading{margin:9px 0 5px;padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #e3eaf8;color:#263957;font-size:15px}
+.task-heading em{font-style:italic;font-weight:550}
+.bullet,.list-item,.subpoint,.criterion,.paragraph{margin:5px 0;padding:8px 14px;border-radius:11px;font-size:15px}
+.bullet{background:#fff;border:1px solid #e8edf8}
+.list-item{margin-left:15px;background:#f9fbff;border-left:2px solid #c5d8ff;color:#394966}
+.subpoint{margin-left:27px;background:linear-gradient(100deg,#f5f0ff,#fff8fc);border-left:2px solid #d5b9ff;color:#51496d;font-size:14px;font-weight:400}
+.criterion{background:rgba(255,255,255,.82);border:1px solid #e9eef9;font-weight:400}
+.level-description{margin:6px 0 12px;padding:11px 14px;background:#f2f8ff;border-radius:12px;color:#536481;font-size:14px;font-weight:450}
+.paragraph{background:rgba(255,255,255,.8);border:1px solid #e8edf8}
+.line.reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.line.reveal.visible{opacity:1;transform:translateY(0)}
+.footer{margin-top:30px;padding:18px 6px;color:#8792a8;font-size:12px;text-align:center}
+@media(max-width:760px){.layout{display:block;padding-top:18px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:18px}.nav-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.hero{border-radius:21px}.topbar{padding:10px 14px}.brand span:last-child{max-width:42vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bullet,.list-item,.subpoint,.criterion,.paragraph{padding:10px 12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.line.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<header class="topbar">
+  <div class="top-actions"><button id="fontDown" type="button" aria-label="Уменьшить размер текста">A−</button><button id="fontUp" type="button" aria-label="Увеличить размер текста">A+</button><button id="topBtn" type="button">В начало ↑</button></div>
+</header>
+<div class="layout">
+  <aside class="sidebar" aria-label="Навигация по лекции">
+    <p class="sidebar-label">Навигация</p>
+    <nav class="nav-list" id="navList"></nav>
+  </aside>
+  <main>
+    <section class="hero" id="start">
+      <div class="bubble-field" aria-hidden="true"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+      <div class="eyebrow"><span class="flower-mark" aria-hidden="true">✿</span> Индивидуальный проект</div>
+      <h1>Молодёжный сленг XXI века: от новых слов к современному словарю</h1>
+      <div class="hero-orb"></div>
+    </section>
+    <div id="lessonContent">
+<div class="line paragraph">Руководитель проекта: Будина Виктория Сергеевна</div>
+<div class="line major-heading work-heading">Направление проекта:</div>
+<div class="line paragraph">Исследовательско-проектная работа, основанная на изучении особенностей современного молодёжного сленга XXI века, анализе происхождения, значения и способов образования новых слов и выражений, а также создании словаря актуальной молодёжной лексики.</div>
+<div class="line major-heading work-heading">Что вы делаете в рамках проекта:</div>
+<div class="line paragraph">В рамках индивидуального проекта вы исследуете, как меняется современный русский язык под влиянием цифровой среды и культуры общения молодёжи, анализируете новые слова и выражения с точки зрения их происхождения и языковых особенностей, проводите исследование среди сверстников и разрабатываете словарь современного молодёжного сленга.</div>
+<div class="line major-heading work-heading">В ходе работы необходимо:</div>
+<div class="line task-heading"><em>· изучить понятие молодёжного сленга и определить его роль в развитии современного русского языка;</em></div>
+<div class="line task-heading"><em>· определить источники формирования современного молодёжного сленга XXI века:</em></div>
+<div class="line subpoint">влияние социальных сетей и интернет-коммуникации;</div>
+<div class="line subpoint">заимствования из иностранных языков;</div>
+<div class="line subpoint">развитие цифровой культуры;</div>
+<div class="line subpoint">появление новых сфер общения;</div>
+<div class="line task-heading"><em>· собрать и сформировать корпус современных сленговых слов и выражений, используемых молодёжью в 2020-е годы;</em></div>
+<div class="line task-heading"><em>·  провести лингвистический анализ выбранных слов и выражений:</em></div>
+<div class="line subpoint">определить значение и сферу употребления;</div>
+<div class="line subpoint">установить происхождение слова;</div>
+<div class="line subpoint">определить способ образования слова или выражения;</div>
+<div class="line subpoint">определить эмоциональную или оценочную окраску;</div>
+<div class="line task-heading"><em>· провести статистическую обработку собранного языкового материала:</em></div>
+<div class="line subpoint">распределить слова по происхождению;</div>
+<div class="line subpoint">выявить наиболее распространённые способы образования новых слов;</div>
+<div class="line subpoint">определить соотношение частей речи в составе сленговой лексики;</div>
+<div class="line subpoint">представить результаты исследования в виде таблиц и диаграмм;</div>
+<div class="line task-heading"><em>· разработать и провести социолингвистический опрос среди сверстников:</em></div>
+<div class="line subpoint">определить, какие сленговые слова знакомы учащимся;</div>
+<div class="line subpoint">выяснить частоту употребления отдельных выражений;</div>
+<div class="line subpoint">проанализировать результаты опроса и представить их в графическом виде;</div>
+<div class="line task-heading"><em>· систематизировать результаты исследования и разработать словарь современного молодёжного сленга XXI века.</em></div>
+<div class="line major-heading">Основная идея исследования</div>
+<div class="line lead-in">В основе проекта должна лежать логическая цепочка:</div>
+<div class="line paragraph">современные слова и выражения → особенности их происхождения и употребления → языковые процессы, отражающие изменения в русском языке → систематизация и представление результатов → создание словаря современного молодёжного сленга</div>
+<div class="line lead-in">Например:</div>
+<div class="line paragraph">Словарь сленга поклонников японской культуры</div>
+<div class="line paragraph">Слова и выражения из аниме-сообществ  → японские заимствования (сенпай, тян, кун), заимствования из английского языка (вайфу, филлер), перенос значений и появление новых слов в фанатской среде (вайфу – любимый женский персонаж) → изменение произношения, образование новых форм (вайфушка, филлерный), использование слов как части молодёжного общения → анализ происхождения и способов образования аниме-сленга, проведение опроса о знании и употреблении этих слов → создание словаря сленга поклонников японской культуры</div>
+<div class="line paragraph">Словарь сленга поклонников корейской культуры</div>
+<div class="line paragraph">Слова и выражения из сообществ поклонников K-pop и корейской культуры → корейские заимствования (макнэ – младший участник группы), английские заимствования из музыкальной индустрии (камбэк, фандом, трейни), сокращения и профессиональные термины фанатской среды → адаптация иностранных слов в русском языке (стримить, камбэки, биасить), появление новых значений в русскоязычном фандоме → исследование происхождения, частоты употребления и узнаваемости слов среди сверстников → создание словаря сленга поклонников корейской культуры</div>
+<div class="line paragraph">Словарь современного геймерского сленга</div>
+<div class="line paragraph">Слова и выражения из игровых сообществ → английские заимствования (скилл – skill, лут – loot, донат – donate), сокращения (катка – игровая катка), перенос значений (имба – несбалансированно сильный объект в игре) → образование русских форм от иностранных основ (крафтить, фармить, апнуть), использование игровых терминов в повседневной речи (это имба, это скилл) → статистический анализ происхождения и способов образования геймерской лексики, проведение опроса среди сверстников → создание словаря современного геймерского сленга</div>
+<div class="line major-heading">Возможные направления исследования</div>
+<div class="line paragraph">Ученик самостоятельно выбирает объект исследования.</div>
+<div class="line level-heading">1. Сленг интернет-сообществ</div>
+<div class="line light-label"><em>Возможные объекты:</em></div>
+<div class="line list-item">язык пользователей социальных сетей;</div>
+<div class="line list-item">сленг блогеров и стримеров;</div>
+<div class="line list-item">язык форумов и онлайн-сообществ;</div>
+<div class="line list-item">мемная лексика;</div>
+<div class="line list-item">язык комментариев и интернет-переписки.</div>
+<div class="line light-label"><em>Возможные направления:</em></div>
+<div class="line list-item">происхождение слов и выражений;</div>
+<div class="line list-item">влияние интернет-трендов и мемов на появление новой лексики;</div>
+<div class="line list-item">изменение значения слов в цифровой среде;</div>
+<div class="line list-item">распространение интернет-сленга в повседневной речи.</div>
+<div class="line level-heading">2. Сленг игровых сообществ</div>
+<div class="line light-label"><em>Возможные объекты:</em></div>
+<div class="line list-item">геймерский сленг;</div>
+<div class="line list-item">сленг киберспортивных сообществ;</div>
+<div class="line list-item">язык игроков онлайн-игр;</div>
+<div class="line list-item">лексика игровых платформ и сообществ.</div>
+<div class="line light-label"><em>Возможные направления:</em></div>
+<div class="line list-item">заимствования из английского языка;</div>
+<div class="line list-item">образование новых слов (например, крафтить, фармить, апнуть);</div>
+<div class="line list-item">переход игровых терминов в повседневную речь;</div>
+<div class="line list-item">изменение значений слов при выходе за пределы игровой среды.</div>
+<div class="line level-heading">3. Сленг фанатских сообществ</div>
+<div class="line light-label"><em>Возможные объекты:</em></div>
+<div class="line list-item">сленг поклонников аниме и японской культуры;</div>
+<div class="line list-item">сленг поклонников корейской культуры (K-pop, дорамы);</div>
+<div class="line list-item">сленг музыкальных фандомов;</div>
+<div class="line list-item">сленг поклонников кино, сериалов и книг.</div>
+<div class="line light-label"><em>Возможные направления:</em></div>
+<div class="line list-item">заимствования из иностранных языков;</div>
+<div class="line list-item">адаптация иностранных слов в русском языке;</div>
+<div class="line list-item">формирование специальной лексики внутри сообщества;</div>
+<div class="line list-item">переход слов из фанатской среды в общую молодёжную речь.</div>
+<div class="line level-heading">4. Новые слова в молодёжном сленге 2020-х годов</div>
+<div class="line light-label"><em>Возможные объекты:</em></div>
+<div class="line list-item">актуальные слова и выражения современной молодёжи;</div>
+<div class="line list-item">сленг социальных сетей;</div>
+<div class="line list-item">слова из интернет-культуры;</div>
+<div class="line list-item">новые выражения, появившиеся в последние годы.</div>
+<div class="line light-label"><em>Возможные направления:</em></div>
+<div class="line list-item">причины появления новых слов;</div>
+<div class="line list-item">источники распространения лексики;</div>
+<div class="line list-item">способы образования новых слов;</div>
+<div class="line list-item">частота употребления среди сверстников.</div>
+<div class="line level-heading">5. Исчезающий молодёжный сленг</div>
+<div class="line light-label"><em>Возможные объекты:</em></div>
+<div class="line list-item">сленг молодёжи 2000–2010-х годов;</div>
+<div class="line list-item">слова, популярные в эпоху ранних социальных сетей;</div>
+<div class="line list-item">сленг молодёжных субкультур (эмо, готов, хипстеров и др.).</div>
+<div class="line light-label"><em>Возможные направления:</em></div>
+<div class="line list-item">происхождение и история появления слов;</div>
+<div class="line list-item">связь сленга с культурой и ценностями определённого поколения или субкультуры;</div>
+<div class="line list-item">причины исчезновения или замены слов современными аналогами;</div>
+<div class="line list-item">переход сленговых слов в общеупотребительную лексику;</div>
+<div class="line list-item">сравнение молодёжного сленга разных периодов XXI века.</div>
+<div class="line major-heading">Итоговый продукт проекта представляет собой словарь современного молодёжного сленга, который может быть выполнен и представлен в различных форматах, например:</div>
+<div class="line list-item">электронный словарь в формате текстового документа (Word, PDF) – оформленное издание, включающее название, содержание, разделы и словарные статьи;</div>
+<div class="line list-item">словарь в формате презентации (PowerPoint) – цифровое издание, в котором каждая словарная статья или группа слов представлены на отдельных слайдах;</div>
+<div class="line list-item">иллюстрированный словарь – оформленное издание, в котором значение слов и выражений дополнено визуальными материалами (рисунками, символами, тематическими изображениями);</div>
+<div class="line list-item">рукописный словарь – самостоятельно оформленная работа, представленная в электронном виде после сканирования или фотографирования страниц.</div>
+<div class="line major-heading">Независимо от выбранного формата и объекта исследования словарь должен включать:</div>
+<div class="line list-item">название словаря;</div>
+<div class="line list-item">словарные статьи, оформленные по единому образцу (не менее 30);</div>
+<div class="line list-item">алфавитный порядок расположения слов и выражений.</div>
+<div class="line major-heading">Пример оформления словарной статьи:</div>
+<div class="line paragraph">Краш, от англ. crush, -а, м. – это человек, который является объектом сильной и безответной влюблённости. Кажется, он мой краш. Когда краш посмотрел на тебя 2 секунды.</div>
+<div class="line major-heading">Структура индивидуального проекта</div>
+<div class="line criterion">1. Актуальность</div>
+<div class="line paragraph">В данном разделе необходимо объяснить, почему изучение современной цифровой речи важно для русского языка и культуры общения.</div>
+<div class="line lead-in">Можно раскрыть:</div>
+<div class="line list-item">влияние цифровой среды, социальных сетей и массовой культуры на появление новых слов и выражений</div>
+<div class="line list-item">способность языка быстро изменяться под воздействием социальных и культурных процессов;</div>
+<div class="line list-item">необходимость изучения современной молодёжной лексики как части развития русского языка;</div>
+<div class="line list-item">важность анализа происхождения, значения и употребления новых слов;</div>
+<div class="line list-item">необходимость понимать значение новых языковых явлений и уметь использовать их уместно;</div>
+<div class="line list-item">значение создания словаря как способа систематизации и сохранения языкового материала.</div>
+<div class="line lead-in">Пример:</div>
+<div class="line paragraph">«Актуальность исследования заключается в том, что современный русский язык активно развивается под влиянием цифровой среды, социальных сетей, массовой культуры и новых форм общения. Особую значимость приобретает изучение молодёжного сленга XXI века, поскольку многие слова и выражения существуют только в течение ограниченного периода времени, отражая особенности определённого поколения, интернет-среды или культурного сообщества. Создание словаря позволяет зафиксировать современное состояние молодёжной лексики и проследить процессы изменения русского языка».</div>
+<div class="line criterion">2. Цель проекта</div>
+<div class="line paragraph">Цель должна отражать конечный результат исследования.</div>
+<div class="line lead-in">Пример:</div>
+<div class="line paragraph">Исследовать особенности формирования и функционирования современного молодёжного сленга XXI века, провести анализ выбранного пласта молодёжной лексики и разработать словарь сленговых слов и выражений на основе результатов исследования.</div>
+<div class="line criterion">3. Задачи проекта</div>
+<div class="line bullet">·        Изучить понятие молодёжного сленга и определить его роль в развитии современного русского языка.</div>
+<div class="line bullet">·         Выбрать направление исследования и определить пласт молодёжного сленга для анализа.</div>
+<div class="line bullet">·         Собрать и систематизировать слова и выражения, относящиеся к выбранному пласту молодёжной лексики.</div>
+<div class="line bullet">·         Проанализировать особенности выбранного сленга:</div>
+<div class="line paragraph">1)    происхождение слов и выражений;</div>
+<div class="line paragraph">2)    способы образования;</div>
+<div class="line paragraph">3)    значение и особенности употребления;</div>
+<div class="line paragraph">4)    эмоциональную окраску;</div>
+<div class="line paragraph">5)    сферу распространения.</div>
+<div class="line bullet">·       Провести статистический анализ собранного языкового материала и выявить основные особенности исследуемого пласта сленга.</div>
+<div class="line bullet">·       Разработать и провести опрос среди сверстников для определения узнаваемости и употребления исследуемых слов и выражений.</div>
+<div class="line bullet">·  Создать и оформить словарь современного молодёжного сленга выбранного направления, включающий словарные статьи с примерами употребления.</div>
+<div class="line bullet">·  Оформить результаты исследования и сформулировать выводы о влиянии выбранного пласта сленга на развитие современного русского языка.</div>
+<div class="line criterion">4. Методы исследования</div>
+<div class="line lead-in">В работе могут использоваться:</div>
+<div class="line list-item">анализ научной и научно-популярной литературы;</div>
+<div class="line list-item">изучение словарей и справочных материалов;</div>
+<div class="line list-item">наблюдение за современной цифровой речью;</div>
+<div class="line list-item">сбор и классификация языкового материала;</div>
+<div class="line list-item">лингвистический анализ;</div>
+<div class="line list-item">сравнительный анализ;</div>
+<div class="line list-item">анкетирование или опрос;</div>
+<div class="line list-item">анализ результатов опроса;</div>
+<div class="line list-item">систематизация и обобщение полученных данных;</div>
+<div class="line list-item">проектирование и создание словаря.</div>
+<div class="line major-heading">5. Основная часть</div>
+<div class="line paragraph">Основная часть должна включать три раздела: теоретический, исследовательский и практический.</div>
+<div class="line level-heading">1) Теоретический раздел</div>
+<div class="line lead-in">В данном разделе необходимо изучить особенности современного молодёжного сленга:</div>
+<div class="line list-item">понятие сленга и его место в системе современного русского языка;</div>
+<div class="line list-item">особенности молодёжного сленга как разновидности социальной лексики;</div>
+<div class="line list-item">причины появления новых слов и выражений;</div>
+<div class="line list-item">источники формирования современного молодёжного сленга (интернет и цифровая коммуникация, заимствования и др.);</div>
+<div class="line list-item">особенности изменения и распространения сленговой лексики;</div>
+<div class="line list-item">роль словарей в изучении и сохранении языкового материала.</div>
+<div class="line level-heading">2) Исследовательский раздел</div>
+<div class="line lead-in">В этом разделе проводится собственное исследование выбранного пласта молодёжного сленга:</div>
+<div class="line list-item">описание выбранного направления исследования и особенностей языковой среды;</div>
+<div class="line list-item">сбор и систематизация слов и выражений выбранного пласта сленга;</div>
+<div class="line lead-in">анализ языковых единиц:</div>
+<div class="line list-item">значения слов или выражений;</div>
+<div class="line list-item">происхождение;</div>
+<div class="line list-item">способы образования;</div>
+<div class="line list-item">принадлежность к части речи;</div>
+<div class="line list-item">эмоциональная окраска;</div>
+<div class="line list-item">особенности употребления;</div>
+<div class="line list-item">проведение статистического анализа собранного материала;</div>
+<div class="line list-item">определение основных тенденций формирования и распространения выбранного пласта молодёжной лексики;</div>
+<div class="line lead-in">разработка и проведение опроса среди сверстников (3-4 вопроса):</div>
+<div class="line list-item">определение уровня узнаваемости слов;</div>
+<div class="line list-item">выявление частоты употребления выражений.</div>
+<div class="line level-heading">3) Практический раздел</div>
+<div class="line lead-in">Разработка и создание словаря современного молодёжного сленга:</div>
+<div class="line list-item">определение структуры и принципов оформления словаря;</div>
+<div class="line list-item">отбор слов и выражений для включения в словарь;</div>
+<div class="line list-item">поиск и подбор примеров употребления отобранных лексических единиц;</div>
+<div class="line list-item">создание словарных статей по единому образцу;</div>
+<div class="line list-item">оформление словаря в выбранном формате.</div>
+<div class="line level-heading">4) Приложение</div>
+<div class="line lead-in">В приложении размещаются дополнительные материалы, подтверждающие результаты исследования:</div>
+<div class="line list-item">текст анкеты для проведения опроса среди сверстников;</div>
+<div class="line list-item">результаты опроса в виде таблиц; схем, диаграмм;</div>
+<div class="line lead-in">классификация отобранных слов и выражений в виде таблиц, схем, диаграмм:</div>
+<div class="line list-item">по происхождению (исконно русские/ заимствованные и др.);</div>
+<div class="line list-item">по части речи (существительные, прилагательные, глаголы и др.);</div>
+<div class="line list-item">по способу образования (заимствование, суффиксальный, сложение основ, переход из другой части речи и др.);</div>
+<div class="line list-item">дополнительные материалы исследования (примеры, иллюстрации и др.).</div>
+<div class="line lead-in">Примеры материалов, которые должны быть представлены в приложении:</div>
+<div class="line major-heading">6. Заключение</div>
+<div class="line lead-in">В заключении необходимо сформулировать:</div>
+<div class="line list-item">какие особенности современного молодёжного сленга XXI века были выявлены в ходе исследования;</div>
+<div class="line list-item">какие источники происхождения, способы образования и языковые особенности характерны для выбранного пласта сленговой лексики;</div>
+<div class="line list-item">какие результаты показали статистический анализ и опрос среди сверстников;</div>
+<div class="line list-item">насколько полно удалось представить особенности выбранного пласта молодёжного сленга в созданном словаре;</div>
+<div class="line list-item">какое значение имеет изучение молодёжного сленга для понимания процессов развития современного русского языка.</div>
+<div class="line major-heading">7. Список источников</div>
+<div class="line lead-in">Включаются:</div>
+<div class="line list-item">толковые и этимологические словари русского языка;</div>
+<div class="line list-item">словари современного молодёжного сленга;</div>
+<div class="line list-item">научные и научно-популярные статьи о развитии русского языка;</div>
+<div class="line list-item">исследования о языке интернет-коммуникации;</div>
+<div class="line list-item">материалы об эмодзи и цифровой коммуникации;</div>
+<div class="line list-item">материалы, использованные для анализа мемов;</div>
+<div class="line list-item">электронные ресурсы;</div>
+<div class="line list-item">материалы собственного исследования и анкетирования;</div>
+<div class="line list-item">источники, использованные при создании итогового словаря.</div>
+<div class="line major-heading">Критерии оценивания проекта</div>
+<div class="line level-heading">5 (отличный уровень)</div>
+<div class="line level-description">Работа представляет собой полноценное исследование и проектный продукт.</div>
+<div class="line criterion">1.     Изучены особенности выбранного пласта молодёжного сленга XXI века.</div>
+<div class="line criterion">2.     Собран и систематизирован качественный языковой материал (не менее 30 слов и выражений).</div>
+<div class="line criterion">3.     Создан и оформлен словарь с единым оформлением словарных статей, включающих значение слов, особенности употребления и необходимые лингвистические характеристики.</div>
+<div class="line criterion">4.     Проведён анализ собранной лексики (происхождение, части речи, способы образования и другие критерии).</div>
+<div class="line criterion">5.     Представлены результаты опроса (не менее 10 респондентов) и классификации слов в виде таблиц, схем или диаграмм.</div>
+<div class="line criterion">6.     Сформулированы выводы о роли исследуемого сленга в современном русском языке..</div>
+<div class="line level-heading">4 (хороший уровень)</div>
+<div class="line level-description">Проект показывает понимание темы, но исследовательская часть или оформление продукта раскрыты не полностью.</div>
+<div class="line criterion">1.     Создан словарь выбранного направления с достаточным количеством слов и выражений.</div>
+<div class="line criterion">2.     Словарные статьи оформлены, но анализ языкового материала представлен частично или недостаточно подробно.</div>
+<div class="line criterion">3.     Проведено собственное исследование, но его результаты представлены недостаточно подробно.</div>
+<div class="line criterion">4.     Отсутствует часть исследовательских материалов (например, результаты опроса, классификация слов или статистический анализ).</div>
+<div class="line criterion">5.     Выводы по результатам исследования сформулированы частично.</div>
+<div class="line paragraph">Работа, содержащая словарь без приложения с результатами анализа и исследования, оценивается не выше отметки «4».</div>
+<div class="line level-heading">3 (удовлетворительный уровень)</div>
+<div class="line level-description">Проект выполнен частично и преимущественно содержит собранную информацию.</div>
+<div class="line criterion">1.     Представлен список слов и выражений по выбранной теме.</div>
+<div class="line criterion">2.     Значения слов указаны частично или без единого оформления словарных статей.</div>
+<div class="line criterion">3.     Отсутствует полноценный анализ происхождения, образования и особенностей употребления слов.</div>
+<div class="line criterion">4.     Не представлены результаты опроса и классификации языкового материала.</div>
+<div class="line paragraph">Работа, представляющая собой только перечень сленговых слов без оформления словаря и исследовательской части, оценивается не выше отметки «3».</div>
+<div class="line level-heading">2 (низкий уровень)</div>
+<div class="line level-description">Проект не соответствует требованиям.</div>
+<div class="line criterion">1.     Тема проекта раскрыта не полностью.</div>
+<div class="line criterion">2.     Отсутствует самостоятельное исследование и анализ языкового материала.</div>
+<div class="line criterion">3.     Итоговый словарь не создан, не завершён или не связан с заявленной темой.</div>
+<div class="line major-heading">Требования к выполнению проекта</div>
+<div class="line paragraph">Проект должен быть выполнен самостоятельно. Использование цифровых инструментов и технологий искусственного интеллекта допускается только как вспомогательного средства (например, для поиска идей, проверки информации, технической обработки материалов), но не для полной разработки исследовательской части, сценария и итогового продукта.</div>
+<div class="line paragraph">Работа, полностью созданная с помощью нейросетевых инструментов без самостоятельного исследования, анализа и творческого вклада ученика, не может быть зачтена как индивидуальный проект.</div>
+    </div>
+  </main>
+</div>
+<script>
+(function(){
+  const lines=Array.from(document.querySelectorAll('#lessonContent .line'));
+  const nav=document.getElementById('navList');
+  const headings=lines.filter(el=>el.classList.contains('major-heading')||el.classList.contains('level-heading'));
+  headings.forEach((el,i)=>{
+    el.id='section-'+i;
+    const label=el.innerText.replace(/\s+/g,' ').trim();
+    const btn=document.createElement('button');btn.type='button';btn.textContent=label;btn.title=label;
+    btn.addEventListener('click',()=>el.scrollIntoView({behavior:'smooth',block:'start'}));nav.appendChild(btn);
+  });
+  if('IntersectionObserver' in window){
+    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.04});
+    lines.forEach(el=>{el.classList.add('reveal');revealObserver.observe(el);});
+  }else lines.forEach(el=>el.classList.add('visible'));
+  const buttons=Array.from(nav.querySelectorAll('button'));
+  const activeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){const i=headings.indexOf(entry.target);buttons.forEach((b,j)=>b.classList.toggle('active',i===j));}}),{rootMargin:'-15% 0px -70% 0px'});
+  headings.forEach(el=>activeObserver.observe(el));
+  const bar=document.getElementById('progressBar');
+  function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(max>0?window.scrollY/max*100:0)+'%';}
+  window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+  document.getElementById('topBtn').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  let fontSize=15;
+  document.getElementById('fontDown').addEventListener('click',()=>{fontSize=Math.max(12,fontSize-1);document.querySelectorAll('.line').forEach(el=>{if(el.matches('.bullet,.list-item,.subpoint,.criterion,.paragraph,.task-heading'))el.style.fontSize=fontSize+'px';});});
+  document.getElementById('fontUp').addEventListener('click',()=>{fontSize=Math.min(22,fontSize+1);document.querySelectorAll('.line').forEach(el=>{if(el.matches('.bullet,.list-item,.subpoint,.criterion,.paragraph,.task-heading'))el.style.fontSize=fontSize+'px';});});
+})();
+</script>
+</body>
+</html>
